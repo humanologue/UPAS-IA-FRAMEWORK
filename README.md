@@ -1,6 +1,3 @@
-Parfait ! Voici le README.md mis à jour avec les informations réelles de votre framework opérationnel :
-
-```markdown
 # UPAS-IA Framework v3.1
 ## Unified Protocol for Auditable Scientific AI Assistance
 

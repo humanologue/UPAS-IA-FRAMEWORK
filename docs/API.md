@@ -1,4 +1,3 @@
-```markdown
 # API Reference
 
 ## Core Classes
@@ -75,43 +74,49 @@ Internal method for pattern detection.
     "process_completeness": 0.4
   }
 }
+```
 
-Interaction Object
-json
+### Interaction Object
 
+```json
 {
   "timestamp": "ISO-8601 timestamp",
   "prompt": "User input to AI system",
   "response": "AI system response",
   "context": ["optional", "context", "tags"]
 }
+```
 
-Usage Examples
-Basic Logging
-python
+## Usage Examples
 
+### Basic Logging
+
+```python
 from upas_ia.core import ProcessLogger
 
 logger = ProcessLogger()
 logger.start_session("My research question")
 logger.log_interaction("Question?", "Answer.")
 ep_i = logger.generate_ep_i()
+```
 
-With Grammar
-python
+### With Grammar
 
+```python
 from upas_ia.core import ProcessLogger
 from upas_ia.digs.statistical import StatisticalGrammar
 
 grammar = StatisticalGrammar()
 logger = ProcessLogger(grammar=grammar)
 logger.start_session("Statistical analysis", "statistics")
+```
 
-File Operations
-python
+### File Operations
 
+```python
 logger.save_to_file("research.json")
 # File can be loaded with:
 import json
 with open("research.json") as f:
     ep_i = json.load(f)
+```
