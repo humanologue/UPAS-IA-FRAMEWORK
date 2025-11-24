@@ -1,4 +1,4 @@
-# UPAS-IA Framework v3.1
+# UPAS-IA Framework
 ## Unified Protocol for Auditable Scientific AI Assistance
 
 ### Abstract
